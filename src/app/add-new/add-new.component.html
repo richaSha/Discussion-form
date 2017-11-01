@@ -1,0 +1,9 @@
+<form >
+<label for="">Title</label>
+<input #title type="text" placeholder="Title">
+<br>
+<label for="">Discussion</label>
+<input #discussion type="text" placeholder="Discussion">
+<br>
+<button type="button" name="button" (click)="submit(title.value, discussion.value)">Done</button>
+</form>

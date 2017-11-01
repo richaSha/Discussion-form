@@ -1,0 +1,8 @@
+<ul *ngFor ="let foodData of foodDiscussion">
+  <li><i>{{foodData.title}}</i><span class="glyphicon {{foodData.dataIcon}}" (click)='toggleDetail(foodData)'></span></li>
+  <p *ngIf="foodData.show" (click)="editData(foodData)">{{foodData.discussion}}</p>
+</ul>
+
+<button type="button" name="button" (click)="addNewItem()">Add</button>
+<app-edit-data *ngIf="showEdit" [childEditData]="editFoodData" (doneEditing)="finishedEditing()" ></app-edit-data>
+<app-add-new *ngIf="addNew" (addNew)="addNewDiscssion($event)"></app-add-new>
