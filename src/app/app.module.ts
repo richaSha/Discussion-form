@@ -10,6 +10,7 @@ import { DiscussionComponent } from './discussion/discussion.component';
 import { routing } from './app.routing';
 import { EditDataComponent } from './edit-data/edit-data.component';
 import { AddNewComponent } from './add-new/add-new.component';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AddNewComponent } from './add-new/add-new.component';
     PlaceComponent,
     DiscussionComponent,
     EditDataComponent,
-    AddNewComponent
+    AddNewComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,

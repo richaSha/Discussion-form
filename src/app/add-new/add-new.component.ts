@@ -9,7 +9,7 @@ import {Discussion} from '../discussion.model';
 export class AddNewComponent {
   @Output() addNew = new EventEmitter();
   submit(title:string, discussion:string){
-    let newObj:Discussion  = new Discussion('food',title,discussion)
+    let newObj:Discussion  = new Discussion('food',title,discussion,3)
     this.addNew.emit(newObj);
   }
 
